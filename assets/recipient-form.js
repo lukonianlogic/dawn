@@ -64,12 +64,12 @@ if (!customElements.get('recipient-form')) {
     onChange() {
       if (this.checkboxInput.checked) {
         this.enableInputFields();
-        this.recipientFieldsLiveRegion.setAttribute('aria-hidden', false)
+        this.recipientFieldsLiveRegion.innerText = window.accessibilityStrings.recipientFormExpanded;
       } else {
         this.clearInputFields();
         this.disableInputFields();
         this.clearErrorMessage();
-        this.recipientFieldsLiveRegion.setAttribute('aria-hidden', true)
+        this.recipientFieldsLiveRegion.innerText = '';
       }
     }
 
