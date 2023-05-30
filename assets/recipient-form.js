@@ -69,7 +69,7 @@ if (!customElements.get('recipient-form')) {
         this.clearInputFields();
         this.disableInputFields();
         this.clearErrorMessage();
-        this.recipientFieldsLiveRegion.innerText = '';
+        this.recipientFieldsLiveRegion.innerText = window.accessibilityStrings.recipientFormCollapsed;
       }
     }
 
